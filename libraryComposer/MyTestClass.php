@@ -54,7 +54,7 @@ class MyTestClass
 
 
         try {
-            if(count($str)> 0){
+            if(!$str[0] == ''){
                 throw new Exception('InvalidArgumentException.');
             }
         } catch (Exception $e) {
